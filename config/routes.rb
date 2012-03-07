@@ -1,6 +1,9 @@
 RailsTutorial::Application.routes.draw do
+
   get "store/index"
 
+  resources :carts
+  resources :line_items
   resources :products
 
   # The priority is based upon order of creation:
